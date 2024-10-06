@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#categories .item {
+  border-radius: 8px;
+  padding: 16px;
+  background: #f6f6fe;
+}
+
+#categories .item h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 16px 0;
+}
+
+#categories .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+}
+
+#categories .item ul li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 48px 24px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.gallery-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery-list-item img {
+  width: 100%;
+  height: auto; /* Allow height to adjust based on aspect ratio */
+  aspect-ratio: 16/9; /* Set the desired aspect ratio (e.g., 16:9 or 4:3) */
+  /* object-fit: fill; */
+}
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+}
+
+#name-input::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.hello-user {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form input:hover {
+  border: 1px solid #000;
+}
+
+.login-form input:focus {
+  border: 1px solid #808080;
+}
+
+.login-form button {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.login-form button:hover {
+  background: #6c8cff;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.widget button {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 32px;
+  background: #f6f6fe;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 0;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#controls button {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 0;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+#controls button:not(:last-child) {
+  background: #4e75ff;
+}
+
+#controls button:not(:last-child):hover {
+  background: #6c8cff;
+}
+
+#controls button:last-child {
+  background: #ff4e4e;
+}
+
+#controls button:last-child:hover {
+  background: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 32px;
+  background: #f6f6fe;
+  gap: 10px;
+}
