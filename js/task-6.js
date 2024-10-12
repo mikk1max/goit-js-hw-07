@@ -20,11 +20,15 @@ const newBox = (step = 0) => {
 createBtn.addEventListener("click", () => {
   boxContainer.innerHTML = ""
   if (Number(inputValue.value) >= 1 && Number(inputValue.value) <= 100) {
+    const fragment = document.createDocumentFragment()
     let step = 0
-    for (let i = 1; i < inputValue.value; i++) {
-      boxContainer.append(newBox(step))
+
+    for (let i = 0; i < inputValue.value; i++) {
+      fragment.append(newBox(step))
       step += 10
     }
+
+    boxContainer.append(fragment)
   } else {
     alert("Please enter a number between 1 and 100.");
   }
